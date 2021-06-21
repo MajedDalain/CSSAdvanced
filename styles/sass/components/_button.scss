@@ -1,0 +1,54 @@
+.btn {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    font-size: 1.5rem;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    position: relative;
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($color: white, $alpha: 0.4);
+
+        &::after {
+            transform: scaleX(1.4) scaleY(1.7);
+            opacity: 0;
+        }
+    }
+
+    &:active {
+        transform: translateY(-1px);
+        box-shadow: 0 0.5rem 1rem rgba($color: white, $alpha: 0.4);
+    }
+
+    &::after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        border-radius: 10rem;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        transition: all 0.4s;
+    }
+
+    &--lightRed {
+        background-color: $color-lightRed;
+        color: $color-white;
+
+        &::after {
+            background-color: $color-lightRed;
+            color: $color-white;
+        }
+    }
+
+    &--animated {
+        animation: moveInButton 0.5s ease-out 0.75s;
+        animation-fill-mode: backwards;
+    }
+}

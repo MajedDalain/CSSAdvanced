@@ -1,0 +1,23 @@
+{
+    "name": "coffeshop",
+    "version": "1.0.0",
+    "description": "a landing page for coffee shop",
+    "main": "index.js",
+    "scripts": {
+        "compile:sass": "node-sass styles/sass/main.scss styles/main.css/main.css -w",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MajedDalain/CSSAdvanced.git"
+    },
+    "author": "MajedDalain",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/MajedDalain/CSSAdvanced/issues"
+    },
+    "homepage": "https://github.com/MajedDalain/CSSAdvanced#readme",
+    "dependencies": {
+        "node-sass": "^6.0.0"
+    }
+}
