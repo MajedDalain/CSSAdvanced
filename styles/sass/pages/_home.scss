@@ -1,0 +1,43 @@
+.section-about {
+    background-color: $color-lightGray;
+    padding: 30rem;
+    margin-top: -25vh;
+}
+
+.section-features {
+    background-image: linear-gradient(
+            to right bottom,
+            $color-lightGray1,
+            $color-darkGray1
+        ),
+        url('../../../imgs/feature-section3.jpg');
+    background-size: cover;
+    background-position: bottom;
+    padding: 20rem;
+    margin-top: -10rem;
+    transform: skewY(-7deg);
+
+    & > * {
+        transform: skewY(7deg);
+    }
+}
+
+.section-products {
+    background-color: $color-lightGray;
+    padding: 25rem 0px 15rem;
+    margin-top: -10rem;
+}
+
+.section-reviews {
+    padding: 20rem 0px 10rem;
+    position: relative;
+}
+
+.section-contact {
+    background-image: linear-gradient(
+        to right bottom,
+        $color-lightYellow1,
+        $color-darkYellow1
+    );
+    padding: 20rem 10rem;
+}

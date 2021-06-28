@@ -1,16 +1,23 @@
+// abstract
+@import 'abstract/variables';
+@import 'abstract/mixins';
+@import 'abstract/functions';
+
 // base
 @import 'base/base';
 @import 'base/animations';
 @import 'base/typography';
 @import 'base/utilities';
 
-// abstract
-@import 'abstract/variables';
-@import 'abstract/mixins';
-@import 'abstract/functions';
-
 // components
 @import 'components/button';
+@import 'components/composition';
+@import 'components/bg-video';
+@import 'components/featureBox';
+@import 'components/productCard';
+@import 'components/story.scss';
+@import 'components/contact';
+@import 'components/form';
 
 // layout
 @import 'layout/header';

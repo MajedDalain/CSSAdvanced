@@ -1,9 +1,6 @@
 .row {
     max-width: $gird-width;
-    background-color: #eee;
-    border: 1px solid pink;
     margin: 0 auto;
-
     &:not(:last-child) {
         margin-bottom: $gutter-vetical;
     }
@@ -11,7 +8,6 @@
     @include clearFix;
 
     [class^='col-'] {
-        background-color: red;
         float: left;
         &:not(:last-child) {
             margin-right: $gutter-horizontal;

@@ -47,8 +47,39 @@
         }
     }
 
+    &--white {
+        background-color: $color-white;
+        color: $color-lightRed;
+
+        &::after {
+            background-color: $color-white;
+            color: $color-lightRed;
+        }
+    }
+
     &--animated {
         animation: moveInButton 0.5s ease-out 0.75s;
         animation-fill-mode: backwards;
+    }
+}
+
+.btn-text {
+    display: inline-block;
+    text-decoration: none;
+    font-size: $font-size-default;
+    color: $color-lightRed;
+    border-bottom: 1px solid $color-lightRed;
+    transition: all 0.2s;
+    padding: 0.5rem;
+    cursor: pointer;
+    &:hover {
+        color: $color-white;
+        background-color: $color-lightRed;
+        transform: translateY(-0.25rem);
+        border-radius: 0.5rem;
+    }
+
+    &:active {
+        transform: translateY(-0.1rem);
     }
 }
