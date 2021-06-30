@@ -16,6 +16,10 @@
         background-color: $color-white;
         transition: all 0.3s;
 
+        &--submit {
+            border: none;
+        }
+
         &:focus {
             outline: none;
             box-shadow: 0 1rem 2rem rgba($color-black, 0.1);

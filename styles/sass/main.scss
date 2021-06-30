@@ -18,10 +18,12 @@
 @import 'components/story.scss';
 @import 'components/contact';
 @import 'components/form';
+@import 'components/footer';
+@import 'components/popup';
 
 // layout
 @import 'layout/header';
 @import 'layout/grid';
-
+@import 'layout/navigation';
 // pages
 @import 'pages/home';
