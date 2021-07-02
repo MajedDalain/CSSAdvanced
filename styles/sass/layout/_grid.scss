@@ -12,6 +12,11 @@
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
         }
+
+        @include respond(phone) {
+            margin-right: 0rem;
+            width: 100% !important;
+        }
     }
     .col-1-of-2 {
         width: calc((100% - #{$gutter-horizontal}) / 2);

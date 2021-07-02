@@ -7,18 +7,20 @@
     &__logo-box {
         text-align: center;
         margin-bottom: 6rem;
+        margin: auto;
     }
 
     &__logo {
         width: 10rem;
         height: auto;
-        transform: translateX(-4rem);
+        margin-bottom: 5rem;
     }
 
     &__navigation {
-        padding: 2rem;
+        padding-top: 2rem;
         width: 80%;
         border-top: 1px solid $color-lightRed;
+        text-align: center;
     }
 
     &__list {
@@ -46,9 +48,20 @@
     }
 
     &__copyright {
+        padding-top: 2rem;
         text-align: center;
-        padding: 1rem;
+        margin-left: 4rem;
         width: 80%;
         border-top: 1px solid $color-lightRed;
+    }
+
+    @include respond(phone) {
+        &__navigation {
+            margin: 3rem auto;
+        }
+
+        &__copyright {
+            margin: auto;
+        }
     }
 }

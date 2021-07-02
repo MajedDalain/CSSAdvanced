@@ -2,6 +2,12 @@
     background-color: $color-lightGray;
     padding: 30rem;
     margin-top: -25vh;
+    text-align: center;
+
+    @include respond(phone) {
+        padding: 30rem 5rem;
+        margin-top: -30vh;
+    }
 }
 
 .section-features {
@@ -17,6 +23,10 @@
     margin-top: -10rem;
     transform: skewY(-7deg);
 
+    @include respond(phone) {
+        padding: 6rem 2rem;
+    }
+
     & > * {
         transform: skewY(7deg);
     }
@@ -31,6 +41,9 @@
 .section-reviews {
     padding: 20rem 0px 10rem;
     position: relative;
+    @include respond(phone) {
+        padding: 10rem 0rem;
+    }
 }
 
 .section-contact {
@@ -40,4 +53,8 @@
         $color-darkYellow1
     );
     padding: 20rem 10rem;
+
+    @include respond(phone) {
+        padding: 10rem 3rem;
+    }
 }

@@ -2,15 +2,18 @@ body {
     font-family: 'Patrick Hand', cursive;
     font-weight: 400;
     line-height: 2rem;
-    padding: 4rem;
 }
 
 .heading-primary {
     color: #fff;
     text-transform: uppercase;
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
     backface-visibility: hidden;
     text-align: center;
+
+    @include respond(phone) {
+        margin-bottom: 4rem;
+    }
 
     &--main {
         font-size: 5rem;
@@ -23,11 +26,12 @@ body {
 
     &--sub {
         display: block;
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-weight: 400;
         letter-spacing: 0.75rem;
         margin-bottom: 3rem;
         animation: moveInRight 1s ease-out;
+        line-height: 3rem;
     }
 }
 
@@ -46,6 +50,7 @@ body {
     color: transparent;
     border: none;
     transition: all 0.2s;
+    line-height: 3.5rem;
 
     &:hover {
         transform: skewY(3deg) skewX(15deg) scale(1.1);
@@ -62,7 +67,7 @@ body {
 }
 
 .paragraph {
-    font-size: $font-size-default;
+    font-size: 2rem;
     font-weight: 400;
     color: $color-darkGray;
     margin-bottom: 2rem;

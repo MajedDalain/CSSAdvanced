@@ -8,18 +8,40 @@
         z-index: 10;
         transition: all 0.1s;
         outline-offset: 1rem;
+
+        @include respond(phone) {
+            width: 80%;
+            position: relative;
+        }
+
         &--p1 {
             left: 0rem;
             top: -2rem;
+
+            @include respond(phone) {
+                left: 0rem;
+                top: 0rem;
+                margin-top: 2rem;
+            }
         }
 
         &--p2 {
             right: -7rem;
             top: 2rem;
+
+            @include respond(phone) {
+                right: 0rem;
+                top: 0rem;
+            }
         }
         &--p3 {
             left: 9rem;
             top: 14rem;
+
+            @include respond(phone) {
+                left: 0rem;
+                top: 0rem;
+            }
         }
 
         &:hover {

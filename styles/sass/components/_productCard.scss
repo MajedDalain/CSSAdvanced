@@ -180,4 +180,68 @@
             transform: rotateY(0deg);
         }
     }
+
+    @include respond(phone) {
+        width: 80%;
+        position: relative;
+        margin: 1.5rem auto;
+        height: auto;
+
+        &__side {
+            height: 100%;
+            position: relative;
+            width: 100%;
+            border-radius: 0.25rem;
+
+            &--front {
+                background-color: $color-white;
+            }
+
+            &--back {
+                transform: rotateY(0deg);
+                position: relative;
+                &--1 {
+                    background-image: linear-gradient(
+                        to right bottom,
+                        $color-lightOrange,
+                        $color-darkOrange
+                    );
+                }
+                &--2 {
+                    background-image: linear-gradient(
+                        to right bottom,
+                        $color-lightGreen,
+                        $color-darkGreen
+                    );
+                }
+                &--3 {
+                    background-image: linear-gradient(
+                        to right bottom,
+                        $color-lightBlue,
+                        $color-darkBlue
+                    );
+                }
+            }
+        }
+
+        &__cta {
+            position: relative;
+            width: 75%;
+            top: 0;
+            left: 0;
+            text-align: center;
+            margin: auto;
+            padding: 3rem 0rem;
+            transform: translate(0, 0);
+        }
+
+        &__details {
+            padding: 2rem;
+
+            ul {
+                font-size: $font-size-medium;
+                line-height: 3rem;
+            }
+        }
+    }
 }

@@ -3,7 +3,7 @@
     text-decoration: none;
     display: inline-block;
     padding: 1.5rem 3rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
     border-radius: 3rem;
     cursor: pointer;
     transition: all 0.2s;
@@ -81,5 +81,9 @@
 
     &:active {
         transform: translateY(-0.1rem);
+    }
+
+    @include respond(phone) {
+        font-size: $font-size-medium;
     }
 }
