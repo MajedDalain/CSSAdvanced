@@ -86,4 +86,49 @@
         -webkit-hyphens: auto;
         hyphens: auto;
     }
+
+    @include respond(phone) {
+        &__content {
+            position: relative;
+            width: 75%;
+            display: block;
+            text-align: center;
+            padding-bottom: 2rem;
+        }
+
+        &__img {
+            display: inline-block;
+            float: left;
+            width: 50%;
+        }
+
+        &__left {
+            width: 100%;
+            float: none;
+            display: block;
+        }
+
+        &__right {
+            width: 100%;
+            float: none;
+            display: block;
+            padding: 0rem;
+        }
+
+        &__text {
+            font-size: $font-size-small;
+            padding: 2rem 1rem;
+
+            -moz-column-count: 2;
+            -moz-column-gap: 2rem;
+            -moz-column-rule: 1px solid $color-black-1;
+
+            column-count: 2;
+            column-gap: 2rem;
+            column-rule: 1px solid $color-black-1;
+        }
+    }
+
+    @include respond(tab-port) {
+    }
 }

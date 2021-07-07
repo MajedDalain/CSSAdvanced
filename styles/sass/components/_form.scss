@@ -51,4 +51,11 @@
             width: 100%;
         }
     }
+
+    @include respond(tab-port) {
+        padding: 1rem auto;
+        &__input {
+            width: 100%;
+        }
+    }
 }

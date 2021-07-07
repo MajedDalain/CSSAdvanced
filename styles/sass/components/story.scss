@@ -68,4 +68,12 @@
             transform: translateX(-3rem) skewX(0deg);
         }
     }
+
+    @include respond(tab-port) {
+        transform: skewX(0deg);
+        padding: 4rem 4rem 4rem 4rem;
+        &__shape {
+            transform: translateX(-3rem) skewX(0deg);
+        }
+    }
 }

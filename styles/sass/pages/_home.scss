@@ -1,12 +1,21 @@
 .section-about {
     background-color: $color-lightGray;
-    padding: 30rem;
+    padding: 20rem 15rem 30rem;
     margin-top: -25vh;
     text-align: center;
 
     @include respond(phone) {
         padding: 30rem 5rem;
         margin-top: -30vh;
+    }
+    @include respond(tab-port) {
+        padding: 10rem 5rem 20rem 5rem;
+        margin-top: -10vh;
+    }
+
+    @include respond(tab-land) {
+        padding: 10rem 10rem 30rem;
+        margin-top: -10vh;
     }
 }
 
@@ -19,12 +28,21 @@
         url('../../../imgs/feature-section3.jpg');
     background-size: cover;
     background-position: bottom;
-    padding: 20rem;
+    padding: 20rem 5rem;
     margin-top: -10rem;
     transform: skewY(-7deg);
 
     @include respond(phone) {
         padding: 6rem 2rem;
+    }
+
+    @include respond(tab-port) {
+        padding: 10rem 10rem;
+        margin-top: -5rem;
+    }
+    @include respond(tab-land) {
+        padding: 10rem;
+        margin-top: -10rem;
     }
 
     & > * {
@@ -44,6 +62,9 @@
     @include respond(phone) {
         padding: 10rem 0rem;
     }
+    @include respond(tab-port) {
+        padding: 10rem 3rem;
+    }
 }
 
 .section-contact {
@@ -55,6 +76,9 @@
     padding: 20rem 10rem;
 
     @include respond(phone) {
+        padding: 10rem 3rem;
+    }
+    @include respond(tab-port) {
         padding: 10rem 3rem;
     }
 }
